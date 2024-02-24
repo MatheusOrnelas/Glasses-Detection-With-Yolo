@@ -69,4 +69,4 @@ This guide provides an overview of setting up and using the YOLO model for objec
 The version of project is 1.0.0.0.0
 
 ## ✒️ Autor
-* **Desenvolvedor** - *Developer of application* - [Matheus de Ornelas Vasconcellos](https://github.com/MatheusOrnelas)
+* **Developer** - *Developer of application* - [Matheus de Ornelas Vasconcellos](https://github.com/MatheusOrnelas)
