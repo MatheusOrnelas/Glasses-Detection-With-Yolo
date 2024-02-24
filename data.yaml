@@ -1,0 +1,13 @@
+train: ../dados/train/images
+val: ../dados/valid/images
+test: ../dados/test/images
+
+nc: 1
+names: ['glasses']
+
+roboflow:
+  workspace: ornelascorp
+  project: glasses-detection-q7b3c
+  version: 1
+  license: MIT
+  url: https://universe.roboflow.com/ornelascorp/glasses-detection-q7b3c/dataset/1
