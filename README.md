@@ -63,3 +63,10 @@ for result in results:
 
 ## Conclusion
 This guide provides an overview of setting up and using the YOLO model for object detection. The YOLO model's efficiency in processing and accuracy makes it a powerful tool for image analysis tasks.
+
+
+## 📌 Version
+The version of project is 1.0.0.0.0
+
+## ✒️ Autor
+* **Desenvolvedor** - *Developer of application* - [Matheus de Ornelas Vasconcellos](https://github.com/MatheusOrnelas)
