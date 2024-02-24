@@ -1,10 +1,10 @@
 
 # YOLO Object Detection with Ultralytics
 
-## Introduction
+## 🎯 Introduction
 This guide explains the implementation of the YOLO (You Only Look Once) object detection model using the Ultralytics library. The YOLO model is renowned for its speed and accuracy in detecting objects in images. This document covers the installation, setup, and usage of the YOLO model to perform object detection.
 
-## Installation and Setup
+## ⚙ Installation and Setup
 To set up the YOLO model for object detection, follow these steps:
 
 1. Install the Ultralytics library:
@@ -18,7 +18,7 @@ To set up the YOLO model for object detection, follow these steps:
 
 3. Prepare your dataset in a format compatible with YOLO, typically a YAML file (`data.yaml`). For this training was used Roboflow for image segmentation and generate data.yaml.
 
-## Training the Model
+## ⚙ Training the Model
 To train the YOLO model, use the following code:
 ```python
 from ultralytics import YOLO
@@ -33,13 +33,13 @@ results = model.train(data='data.yaml', epochs=100, imgsz=640)
 - `epochs=100` sets the number of training iterations.
 - `imgsz=640` sets the image size for training.
 
-## Loading the Best Model
+## ⚙ Loading the Best Model
 After training, load the best-performing model:
 ```python
 model = YOLO('runs/detect/train/weights/best.pt')
 ```
 
-## Object Detection
+## ⚙ Object Detection
 Perform object detection on a list of images:
 ```python
 # Images to predict
@@ -49,7 +49,7 @@ list_imgs = ['img_test_01.jpg', 'img_test_02.jpg', 'img_test_03.jpg', 'img_test_
 results = model(list_imgs)  
 ```
 
-## Processing Results
+## ⚙ Processing Results
 Process the results to get the detection outputs:
 ```python
 for result in results:
@@ -61,7 +61,7 @@ for result in results:
     # result.save(filename='result_'+result.path.split('.')[0]+'.jpg')  # Save to disk
 ```
 
-## Conclusion
+## 📝 Conclusion
 This guide provides an overview of setting up and using the YOLO model for object detection. The YOLO model's efficiency in processing and accuracy makes it a powerful tool for image analysis tasks.
 
 
